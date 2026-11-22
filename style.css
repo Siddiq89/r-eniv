@@ -20,26 +20,27 @@
   --font-body: "IBM Plex Sans", "Segoe UI", Roboto, Arial, sans-serif;
   --font-mono: "IBM Plex Mono", Consolas, "Courier New", monospace;
   --radius: 6px;
+  --fond: url("images/fond_ecologie.svg");
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --paper: #0f1a1f; --surface: #15242b; --surface-2: #1c2e36; --ink: #e3ecea; --muted: #98abaf;
     --line: #2a3c44; --water: #62aee2; --water-soft: #173447; --veg: #6cc08a; --veg-soft: #183829;
     --contour: #d9a06a; --contour-soft: #3a2a1a; --bad: #ec8a8a; --bad-soft: #3d1f22;
-    --code-bg: #0a1317; --code-fg: #dfe9e6; color-scheme: dark;
+    --code-bg: #0a1317; --code-fg: #dfe9e6; color-scheme: dark; --fond: url("images/fond_ecologie_sombre.svg");
   }
 }
 :root[data-theme="dark"] {
   --paper: #0f1a1f; --surface: #15242b; --surface-2: #1c2e36; --ink: #e3ecea; --muted: #98abaf;
   --line: #2a3c44; --water: #62aee2; --water-soft: #173447; --veg: #6cc08a; --veg-soft: #183829;
   --contour: #d9a06a; --contour-soft: #3a2a1a; --bad: #ec8a8a; --bad-soft: #3d1f22;
-  --code-bg: #0a1317; --code-fg: #dfe9e6; color-scheme: dark;
+  --code-bg: #0a1317; --code-fg: #dfe9e6; color-scheme: dark; --fond: url("images/fond_ecologie_sombre.svg");
 }
 
 * { box-sizing: border-box; }
 html, body { margin: 0; }
 body {
-  background: var(--paper);
+  background: var(--paper) var(--fond) center bottom / cover no-repeat fixed;
   color: var(--ink);
   font-family: var(--font-body);
   font-size: 16px;
@@ -83,7 +84,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 main { padding-block: 28px 64px; }
 
 /* ---------- Accueil ---------- */
-.hero { position: relative; overflow: hidden; border-bottom: 1px solid var(--line); background: var(--surface); }
+.hero { position: relative; overflow: hidden; border-bottom: 1px solid var(--line); background: color-mix(in srgb, var(--surface) 72%, transparent); backdrop-filter: blur(2px); }
 .hero canvas { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
 .hero .wrap { position: relative; padding-block: 44px 40px; display: grid; gap: 18px; }
 .eyebrow { font-family: var(--font-mono); font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--contour); }
@@ -286,3 +287,9 @@ main > .logiciels { margin-bottom: 14px; }
 .piege { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
 :not(pre) > code { overflow-wrap: anywhere; }
 .quiz label span { overflow-wrap: anywhere; min-width: 0; }
+
+/* Fond « écologie » : paysage de collines boisées (images/fond_ecologie*.svg). Les blocs de texte restent sur fond plein. */
+.section-title, .level-head, .crumbs { background: color-mix(in srgb, var(--paper) 78%, transparent); border-radius: var(--radius); padding-inline: 10px; }
+.route .stop { background: color-mix(in srgb, var(--surface) 90%, transparent); }
+@media (max-width: 700px) { body { background-attachment: scroll; } }
+.side { background: color-mix(in srgb, var(--surface) 88%, transparent); border-radius: var(--radius); padding: 8px; align-self: start; }
