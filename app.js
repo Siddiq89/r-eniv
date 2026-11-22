@@ -280,7 +280,7 @@
     var suite = prochaineEtape();
     var nbLecons = toutesLecons().length;
     var totalLecons = PARCOURS.reduce(function (t, c) { return t + c.niveaux.reduce(function (u, n) { return u + n.lecons.length; }, 0); }, 0);
-    var html = '<section class="hero"><canvas aria-hidden="true"></canvas><div class="wrap">' +
+    var html = '<section class="hero"><div class="wrap">' +
       '<div class="vitrine"><span class="eyebrow">' + T("vitrine.eyebrow", PARCOURS.length, totalLecons) + '</span>' +
       '<h1>' + T("vitrine.h1") + '</h1>' +
       '<p class="sous-titre">' + T("vitrine.sous") + '</p></div>' +
@@ -317,8 +317,6 @@
     html += '<div class="section-title"><h2>' + T("reinit") + '</h2></div><div class="row"><button class="btn small danger" id="reset" type="button">' + T("effacer") + '</button><span id="reset-msg" class="tag" hidden>' + T("confirmer") + '</span></div>';
     html += '</main>';
     app.innerHTML = html;
-    var cv = app.querySelector(".hero canvas");
-    requestAnimationFrame(function () { dessinerCourbes(cv); });
 
     var armed = false;
     document.getElementById("reset").addEventListener("click", function () {
