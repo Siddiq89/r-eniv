@@ -1,0 +1,6 @@
+Dossier facultatif pour des vidéos locales (.mp4).
+
+Le site utilise par défaut des vidéos YouTube en français et en arabe
+(liste dans donnees/videos.js). Pour ajouter une vidéo locale : copiez le
+.mp4 ici, puis ajoutez-la depuis la page « Administration » du site en
+indiquant videos/nom_du_fichier.mp4.

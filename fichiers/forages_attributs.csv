@@ -1,0 +1,31 @@
+"ID_FOR","NOM","PROF_M","DEBIT_LS","ETAT","ANNEE","ALT_M"
+"F001","Forage 1",175,6.5,"En service",1998,851
+"F002","Forage 2",65,7.1,"En service",2007,896.8
+"F003","Forage 3",185,9.9,"À l'arrêt",1990,579.3
+"F004","Forage 4",235,16,"En service",2021,549.8
+"F005","Forage 5",250,4.5,"En service",1990,417.6
+"F006","Forage 6",160,5.4,"En service",1995,870.6
+"F007","Forage 7",125,12.8,"En service",1995,460.8
+"F008","Forage 8",185,7.1,"Abandonné",1999,525
+"F009","Forage 9",55,4.5,"En service",2005,660.9
+"F010","Forage 10",220,15.8,"En service",1998,499.9
+"F011","Forage 11",245,8.5,"En service",1993,604.6
+"F012","Forage 12",120,13.6,"À l'arrêt",2022,396
+"F013","Forage 13",80,9.4,"En service",1988,466.2
+"F014","Forage 14",90,14.4,"À l'arrêt",1989,983.1
+"F015","Forage 15",185,9.8,"Abandonné",1985,705.7
+"F016","Forage 16",210,13.6,"En service",1992,470.5
+"F017","Forage 17",40,17.2,"En service",2017,478.1
+"F018","Forage 18",70,15.7,"En service",2017,710.6
+"F019","Forage 19",90,9.9,"Abandonné",1985,339.3
+"F020","Forage 20",75,16.8,"En service",2000,542.2
+"F021","Forage 21",65,2,"À l'arrêt",1989,983.5
+"F022","Forage 22",80,2.7,"À l'arrêt",2020,656.7
+"F023","Forage 23",230,7.9,"En service",2019,685.6
+"F024","Forage 24",135,7.5,"En service",2013,867.3
+"F025","Forage 25",115,4.4,"En service",1986,689.8
+"F026","Forage 26",110,0.6,"En service",1999,425.4
+"F027","Forage 27",145,1.7,"En service",2002,434.9
+"F028","Forage 28",80,13.2,"Abandonné",2021,464.8
+"F029","Forage 29",170,3.8,"En service",2012,830.8
+"F030","Forage 30",55,12.3,"En service",1988,586.6

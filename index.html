@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>R ENIV · Apprendre le logiciel R</title>
+<meta name="description" content="R ENIV : apprenez le logiciel R et RStudio, des bases du langage aux statistiques, aux cartes et à l'analyse des risques naturels. Leçons, vidéos, données de TP, scripts et quiz.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#accueil" aria-label="Accueil" data-t-label="accueil">
+      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
+        <rect x="1" y="1" width="32" height="32" rx="6" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M5 26c4-5 8-2 11-6s7-5 13-3" fill="none" stroke="var(--contour)" stroke-width="1.4" stroke-linecap="round" opacity=".7"/>
+        <text x="17" y="22.5" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-weight="600" font-size="15" fill="var(--water)">R</text>
+        <circle cx="26" cy="9" r="2.4" fill="var(--veg)"/>
+      </svg>
+      <span><b>R ENIV</b><small data-t="marque.sous">Logiciel R et RStudio — Enseignant : BOUHAFSI SIDDIQ</small></span>
+    </a>
+    <nav class="topnav" aria-label="Navigation principale" data-t-label="nav.principale">
+      <a href="#accueil" data-nav="accueil" data-t="nav.parcours">Parcours</a>
+      <a href="#videos" data-nav="videos" data-t="nav.videos">Vidéos</a>
+      <a href="#telechargements" data-nav="telechargements" data-t="nav.telechargements">Téléchargements</a>
+      <a href="#livre" data-nav="livre" data-t="nav.livre">Livre d'or</a>
+      <a href="#admin" data-nav="admin" data-t="nav.admin">Administration</a>
+    </nav>
+    <select id="langue" class="langue" aria-label="Langue"><option value="fr">Français</option><option value="ar">العربية</option><option value="en">English</option></select>
+    <div class="meter" title="Progression globale" data-t-title="progression.globale">
+      <div class="bar"><i id="meter-fill" style="width:0%"></i></div>
+      <span id="meter-text">0 %</span>
+    </div>
+  </div>
+</header>
+
+<div id="app"></div>
+
+<footer>
+  <div class="wrap">
+    <span data-t="pied.1">R ENIV : apprendre le logiciel R pour l'environnement et la géomatique, pour les élèves de l'ENIV · Enseignant : <b>BOUHAFSI SIDDIQ</b></span>
+    <span data-t="pied.2">Merci aux chaînes YouTube qui partagent leurs vidéos : <a href="#remerciements">Remerciements</a>. La progression est enregistrée dans ce navigateur.</span>
+  </div>
+</footer>
+
+<script src="donnees/langues.js"></script>
+<script src="donnees/cours_r.js"></script>
+<script src="donnees/videos.js"></script>
+<script src="donnees/fichiers.js"></script>
+<script src="donnees/livre.js"></script>
+<script src="donnees/traductions/en_r.js"></script>
+<script src="donnees/traductions/ar_r.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

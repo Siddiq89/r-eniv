@@ -1,0 +1,15 @@
+"RISQUE","CRITERE","POIDS"
+"Inondation","dist_oued",35
+"Inondation","hand",25
+"Inondation","pente",20
+"Inondation","accumulation",10
+"Inondation","occupation",10
+"Feux","occupation",35
+"Feux","pente",20
+"Feux","exposition",15
+"Feux","dist_routes",15
+"Feux","dist_habitat",15
+"Glissements","pente",40
+"Glissements","lithologie",30
+"Glissements","dist_oued",15
+"Glissements","occupation",15

@@ -1,0 +1,43 @@
+R ENIV — Apprendre le logiciel R (R et RStudio) pour l'environnement et la géomatique
+Enseignant : BOUHAFSI SIDDIQ
+=====================================================================================
+
+PARCOURS : 8 niveaux, 30 leçons, 47 questions de quiz
+  1 Découvrir R et RStudio        5 Statistiques pour l'environnement
+  2 Les bases du langage R        6 Programmer avec R
+  3 Tableaux de données (dplyr)   7 Données vectorielles et cartographie (sf)
+  4 Graphiques avec ggplot2       8 Raster, MNT et risques naturels (terra)
+
+OUVRIR LE SITE
+  Double-cliquez sur index.html (fonctionne sans Internet, sauf les polices et
+  les vidéos YouTube). Ou en ligne sur GitHub Pages.
+
+LANGUES : français (par défaut), العربية (de droite à gauche, code R de gauche
+  à droite) et English. Sélecteur en haut de page.
+
+CONTENU DU DOSSIER
+  index.html, style.css, app.js     le site
+  donnees/cours_r.js                niveaux, leçons, exercices et quiz (français)
+  donnees/traductions/en_r.js, ar_r.js   traductions anglaise et arabe
+  donnees/videos.js                 vidéos YouTube (français et arabe uniquement)
+  donnees/fichiers.js               fichiers à télécharger
+  donnees/livre.js                  adresse du livre d'or (même Google Sheet que
+                                    le site SIG ; colonne « parcours » = r)
+  fichiers/                         TP_R_ENIV.zip (projet RStudio complet),
+                                    scripts .R, tables CSV/Excel, GeoPackage, MNT
+  generateur/                       sources Python et R qui produisent le contenu
+                                    et les données (facultatif)
+
+DONNÉES DE TP
+  Zone FICTIVE (bassin de l'oued Tamda, 20 x 20 km au sud de Tlemcen,
+  WGS 84 / UTM 30N). Décompressez TP_R_ENIV.zip dans C:\ENIV\ puis ouvrez
+  C:\ENIV\TP_R\TP_R.Rproj dans RStudio. Les 9 scripts et le code des leçons ont
+  été exécutés sans erreur avec R 4.3.3, sf 1.0 et terra 1.7.
+
+AJOUTER UNE VIDÉO
+  Page « Administration » du site, puis « Télécharger videos.js » et remplacer
+  donnees/videos.js. Garder la description « Chaîne YouTube : Nom. » pour que
+  la chaîne apparaisse sur la page Remerciements.
+
+PROGRESSION DES ÉLÈVES
+  Enregistrée dans le navigateur de chaque poste (indépendante du site SIG).
