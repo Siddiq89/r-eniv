@@ -1,7 +1,7 @@
 /*
  * FICHIERS D'EXEMPLE À TÉLÉCHARGER — parcours R
  * Pour ajouter un fichier : copiez-le dans fichiers/ puis ajoutez un bloc { ... } ci-dessous.
- * Champs : niveau ("r1"…"r8" ou "" pour un fichier général), lecon (ex. "r3-l2" ou ""),
+ * Champs : niveau ("r1"…"r8", "b1"…"b9" ou "" pour un fichier général), lecon (ex. "r3-l2" ou ""),
  *          fichier (chemin depuis le dossier du site), titre, taille, description.
  */
 window.FICHIERS = [
@@ -9,8 +9,8 @@ window.FICHIERS = [
     "niveau": "",
     "lecon": "",
     "fichier": "fichiers/TP_R_ENIV.zip",
-    "titre": "Toutes les données et scripts du TP (projet RStudio)",
-    "taille": "405 Ko",
+    "titre": "Toutes les données et scripts du TP (projet RStudio, parcours R et Biodiversité)",
+    "taille": "1,7 Mo",
     "description": "Décompressez dans C:\\ENIV\\ puis double-cliquez sur C:\\ENIV\\TP_R\\TP_R.Rproj."
   },
   {
@@ -46,11 +46,27 @@ window.FICHIERS = [
     "description": "Modèle numérique de terrain du bassin, WGS 84 / UTM 30N."
   },
   {
+    "niveau": "",
+    "lecon": "",
+    "fichier": "fichiers/donnees_biodiversite.zip",
+    "titre": "Données du parcours Biodiversité (dossier donnees/biodiversite)",
+    "taille": "1,3 Mo",
+    "description": "Données fictives (noms d'espèces réels) : occurrences au format GBIF, NDVI 2010-2024, forêts, communautés, réseaux, oiseaux, ADN environnemental. Déjà incluses dans TP_R_ENIV.zip."
+  },
+  {
+    "niveau": "",
+    "lecon": "",
+    "fichier": "fichiers/scripts_biodiversite.zip",
+    "titre": "Les 9 scripts R du parcours Biodiversité",
+    "taille": "15 Ko",
+    "description": "Un script par niveau (B1 à B9), testés sur les données du TP. À placer dans TP_R/scripts/biodiversite."
+  },
+  {
     "niveau": "r1",
     "lecon": "r1-l3",
     "fichier": "fichiers/TP_R_ENIV.zip",
     "titre": "Le projet TP_R complet",
-    "taille": "405 Ko",
+    "taille": "1,7 Mo",
     "description": "Décompressez dans C:\\ENIV\\ et ouvrez TP_R.Rproj."
   },
   {
@@ -220,5 +236,85 @@ window.FICHIERS = [
     "titre": "Script des cartes de risques",
     "taille": "5 Ko",
     "description": "Inondation, feux, glissements, validation et synthèse multirisque."
+  },
+  {
+    "niveau": "b1",
+    "lecon": "",
+    "fichier": "fichiers/b1_donnees_en_ligne.R",
+    "titre": "Script du niveau B1",
+    "taille": "3 Ko",
+    "description": "Recherche GBIF/OBIS/WorldClim (EN_LIGNE), nettoyage, thinning et carte de richesse."
+  },
+  {
+    "niveau": "b1",
+    "lecon": "b1-l2",
+    "fichier": "fichiers/occurrences_gbif_simulees.csv",
+    "titre": "Export GBIF simulé (à nettoyer)",
+    "taille": "20 Ko",
+    "description": "Mêmes colonnes qu'un export GBIF réel : coordonnées manquantes, (0, 0), signes inversés et doublons volontaires."
+  },
+  {
+    "niveau": "b2",
+    "lecon": "",
+    "fichier": "fichiers/b2_teledetection_ndvi.R",
+    "titre": "Script du niveau B2",
+    "taille": "3 Ko",
+    "description": "Tendance NDVI par pixel, Mann-Kendall, perturbation, fragmentation forestière."
+  },
+  {
+    "niveau": "b3",
+    "lecon": "",
+    "fichier": "fichiers/b3_diversite_beta_neutralite.R",
+    "titre": "Script du niveau B3",
+    "taille": "3 Ko",
+    "description": "Alpha, bêta, gamma, décomposition de Baselga, NMDS, modèles nuls et simulation neutre."
+  },
+  {
+    "niveau": "b4",
+    "lecon": "",
+    "fichier": "fichiers/b4_reseaux_multiplexes.R",
+    "titre": "Script du niveau B4",
+    "taille": "3 Ko",
+    "description": "Réseaux bipartis, connectance, NODF, modularité, réseau multiplexe et robustesse."
+  },
+  {
+    "niveau": "b5",
+    "lecon": "",
+    "fichier": "fichiers/b5_sdm_ia_explicable.R",
+    "titre": "Script du niveau B5",
+    "taille": "2 Ko",
+    "description": "SDM ranger, AUC, carte, importance, dépendance partielle, ICE, explication locale."
+  },
+  {
+    "niveau": "b6",
+    "lecon": "",
+    "fichier": "fichiers/b6_occupation_detection.R",
+    "titre": "Script du niveau B6",
+    "taille": "3 Ko",
+    "description": "Vraisemblance du modèle d'occupation avec optim(), carte de ψ, nombre de passages."
+  },
+  {
+    "niveau": "b7",
+    "lecon": "",
+    "fichier": "fichiers/b7_adn_environnemental.R",
+    "titre": "Script du niveau B7",
+    "taille": "2 Ko",
+    "description": "ADNe : sensibilité d'un protocole et modèle multi-échelle bayésien avec JAGS."
+  },
+  {
+    "niveau": "b8",
+    "lecon": "",
+    "fichier": "fichiers/b8_jsdm.R",
+    "titre": "Script du niveau B8",
+    "taille": "3 Ko",
+    "description": "SDM empilés, corrélations résiduelles et JSDM à facteurs latents avec JAGS."
+  },
+  {
+    "niveau": "b9",
+    "lecon": "",
+    "fichier": "fichiers/b9_bayesien_spatiotemporel.R",
+    "titre": "Script du niveau B9",
+    "taille": "4 Ko",
+    "description": "Occupation de communauté bayésienne (JAGS) et GAM spatio-temporel avec incertitude."
   }
 ];

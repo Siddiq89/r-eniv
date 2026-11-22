@@ -1,9 +1,9 @@
 /*
- * VIDÉOS TUTORIELLES — parcours R
+ * VIDÉOS TUTORIELLES — parcours R et Biodiversité
  * Vidéos YouTube en français ou en arabe uniquement, vérifiées en ligne le 22/11/2026.
  * Ajoutez des vidéos depuis la page « Administration » du site, puis remplacez ce fichier
  * par le videos.js téléchargé, ou copiez un bloc { ... } à la main.
- * Champs : niveau ("r1"…"r8"), lecon (ex. "r3-l2" ou "" pour tout le niveau), titre,
+ * Champs : niveau ("r1"…"r8" ou "b1"…"b9"), lecon (ex. "r3-l2" ou "" pour tout le niveau), titre,
  *          url (YouTube ou videos/fichier.mp4), duree, description ("Chaîne YouTube : Nom." alimente la page Remerciements).
  */
 window.VIDEOS = [
@@ -358,5 +358,141 @@ window.VIDEOS = [
     "url": "https://www.youtube.com/watch?v=4tAnUTb_vmY",
     "duree": "",
     "description": "Chaîne YouTube : EGD ACADEMIA."
+  },
+  {
+    "niveau": "b1",
+    "lecon": "b1-l1",
+    "titre": "Télécharger des occurrences sur GBIF (avec application des filtres)",
+    "url": "https://www.youtube.com/watch?v=B40ye0iPudk",
+    "duree": "",
+    "description": "Chaîne YouTube : Bek's."
+  },
+  {
+    "niveau": "b2",
+    "lecon": "b2-l1",
+    "titre": "Télédétection : calcul du NDVI avec Sentinel-2 (partie 1, sans R)",
+    "url": "https://www.youtube.com/watch?v=6BEXuzE5Wqo",
+    "duree": "",
+    "description": "Chaîne YouTube : DAHA Service Technique."
+  },
+  {
+    "niveau": "b2",
+    "lecon": "b2-l1",
+    "titre": "Télédétection : classer le NDVI et cartographier l'état de la végétation (partie 2, sans R)",
+    "url": "https://www.youtube.com/watch?v=mI8mOX1Pttw",
+    "duree": "",
+    "description": "Chaîne YouTube : DAHA Service Technique."
+  },
+  {
+    "niveau": "b2",
+    "lecon": "b2-l2",
+    "titre": "La fragmentation écologique, une menace pour la biodiversité",
+    "url": "https://www.youtube.com/watch?v=DhidhdfRfaI",
+    "duree": "",
+    "description": "Chaîne YouTube : Brut."
+  },
+  {
+    "niveau": "b2",
+    "lecon": "b2-l2",
+    "titre": "L'écologie du paysage au service de la biodiversité ? (version courte)",
+    "url": "https://www.youtube.com/watch?v=eImYbtGNdSQ",
+    "duree": "",
+    "description": "Chaîne YouTube : Lionel Goupil."
+  },
+  {
+    "niveau": "b2",
+    "lecon": "b2-l2",
+    "titre": "Tutoriel FragScape (1) : aperçu (outil QGIS de mesure de la fragmentation)",
+    "url": "https://www.youtube.com/watch?v=Hixc5Al7OyM",
+    "duree": "",
+    "description": "Chaîne YouTube : UMR TETIS."
+  },
+  {
+    "niveau": "b3",
+    "lecon": "b3-l1",
+    "titre": "Les échelles de la biodiversité",
+    "url": "https://www.youtube.com/watch?v=CMDVJ6ifyRA",
+    "duree": "",
+    "description": "Chaîne YouTube : Frédéric Guilleray."
+  },
+  {
+    "niveau": "b3",
+    "lecon": "b3-l1",
+    "titre": "Indices de diversité avec vegan sous R (Shannon, Simpson, Pielou)",
+    "url": "https://www.youtube.com/watch?v=NddMJ_yaN3c",
+    "duree": "",
+    "description": "Chaîne YouTube : David Beaune."
+  },
+  {
+    "niveau": "b4",
+    "lecon": "b4-l1",
+    "titre": "Interactions plantes-pollinisateurs : hier, aujourd'hui et demain (2), E. Porcher",
+    "url": "https://www.youtube.com/watch?v=lj5YiJT8LOI",
+    "duree": "",
+    "description": "Chaîne YouTube : Sciences de la vie - Collège de France."
+  },
+  {
+    "niveau": "b4",
+    "lecon": "b4-l2",
+    "titre": "Interactions plantes-pollinisateurs : hier, aujourd'hui et demain (4), E. Porcher",
+    "url": "https://www.youtube.com/watch?v=XdBZU0xUhSg",
+    "duree": "",
+    "description": "Chaîne YouTube : Sciences de la vie - Collège de France."
+  },
+  {
+    "niveau": "b5",
+    "lecon": "b5-l1",
+    "titre": "Choix du nombre d'arbres et de variables en forêt aléatoire (random forest)",
+    "url": "https://www.youtube.com/watch?v=54YN_XVeUJI",
+    "duree": "",
+    "description": "Chaîne YouTube : LeCoinStat."
+  },
+  {
+    "niveau": "b7",
+    "lecon": "b7-l1",
+    "titre": "ADN environnemental, une révolution dans l'air",
+    "url": "https://www.youtube.com/watch?v=ul7SRHY4QU0",
+    "duree": "",
+    "description": "Chaîne YouTube : Le Blob."
+  },
+  {
+    "niveau": "b7",
+    "lecon": "b7-l1",
+    "titre": "Vous connaissez l'ADN, mais connaissez-vous l'ADN environnemental ?",
+    "url": "https://www.youtube.com/watch?v=jQ9tuRMKnFA",
+    "duree": "",
+    "description": "Chaîne YouTube : Verso."
+  },
+  {
+    "niveau": "b7",
+    "lecon": "b7-l1",
+    "titre": "ADN et big data au service de l'environnement",
+    "url": "https://www.youtube.com/watch?v=KRVMCzOc_4U",
+    "duree": "",
+    "description": "Chaîne YouTube : Monde Numérique."
+  },
+  {
+    "niveau": "b7",
+    "lecon": "b7-l1",
+    "titre": "L'ADN environnemental (ADNe) et l'ARN environnemental (ARNe)",
+    "url": "https://www.youtube.com/watch?v=Xgh3m8WBoFI",
+    "duree": "",
+    "description": "Chaîne YouTube : Académie d'agriculture de France."
+  },
+  {
+    "niveau": "b7",
+    "lecon": "b7-l2",
+    "titre": "Statistiques bayésiennes : introduction",
+    "url": "https://www.youtube.com/watch?v=8mf7AgbTyV4",
+    "duree": "",
+    "description": "Chaîne YouTube : Pour Apprendre."
+  },
+  {
+    "niveau": "b8",
+    "lecon": "b8-l2",
+    "titre": "Les journées 2024 du GdR EcoStat : atelier jSDM",
+    "url": "https://www.youtube.com/watch?v=f4SmgKzk3U4",
+    "duree": "",
+    "description": "Chaîne YouTube : GDR EcoStat."
   }
 ];

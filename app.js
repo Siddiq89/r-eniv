@@ -2,8 +2,8 @@
 (function () {
   "use strict";
 
-  // Parcours R (niveaux r1…r8)
-  var PARCOURS = [window.COURS].filter(Boolean);
+  // Parcours R (niveaux r1…r8) et Biodiversité (niveaux b1…b9)
+  var PARCOURS = [window.COURS, window.COURS_BIO].filter(Boolean);
   PARCOURS.forEach(function (c) { if (!c.cle) c.cle = "r"; });
   var T = window.T || function (k) { return k; };
   // Copie française de chaque parcours, pour pouvoir changer de langue sans recharger

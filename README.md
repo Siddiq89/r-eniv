@@ -9,3 +9,10 @@ Enseignant : **BOUHAFSI SIDDIQ**.
 - Vidéos YouTube en français et en arabe
 
 Site en ligne : https://siddiq89.github.io/r-eniv/ — mode d'emploi détaillé dans `LISEZ-MOI.txt`.
+
+## Parcours Biodiversité
+
+Deuxième parcours (niveaux b1 à b9) : l'écologie quantitative avec R, appuyée sur des sources de données ouvertes
+(GBIF, OBIS, WorldClim, Copernicus, MODIS) : télédétection et séries temporelles de NDVI, diversité bêta et neutralité,
+réseaux écologiques multiplexes, SDM et IA explicable, modèles d'occupation avec détection imparfaite, ADN environnemental,
+JSDM, modèles bayésiens multi-espèces et spatio-temporels. Données de TP fictives (noms d'espèces réels), dans `TP_R/donnees/biodiversite`.

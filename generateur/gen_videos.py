@@ -44,15 +44,32 @@ V = [
  ("r8","r8-l1","Données raster et algèbre cartographique (notions SIG, sans R)","GO556Qn33oc","Walid Moulahoum (Moul el SIG)"),
  ("r8","r8-l1","Modèle de données raster (théorie)","NBmVtMniasU","Walid Moulahoum (Moul el SIG)"),
  ("r8","r8-l2","Réaliser une carte de pente à partir d'un MNT (notions, autre logiciel que R)","4tAnUTb_vmY","EGD ACADEMIA"),
+ ("b1","b1-l1","Télécharger des occurrences sur GBIF (avec application des filtres)","B40ye0iPudk","Bek's"),
+ ("b2","b2-l1","Télédétection : calcul du NDVI avec Sentinel-2 (partie 1, sans R)","6BEXuzE5Wqo","DAHA Service Technique"),
+ ("b2","b2-l1","Télédétection : classer le NDVI et cartographier l'état de la végétation (partie 2, sans R)","mI8mOX1Pttw","DAHA Service Technique"),
+ ("b2","b2-l2","La fragmentation écologique, une menace pour la biodiversité","DhidhdfRfaI","Brut"),
+ ("b2","b2-l2","L'écologie du paysage au service de la biodiversité ? (version courte)","eImYbtGNdSQ","Lionel Goupil"),
+ ("b2","b2-l2","Tutoriel FragScape (1) : aperçu (outil QGIS de mesure de la fragmentation)","Hixc5Al7OyM","UMR TETIS"),
+ ("b3","b3-l1","Les échelles de la biodiversité","CMDVJ6ifyRA","Frédéric Guilleray"),
+ ("b3","b3-l1","Indices de diversité avec vegan sous R (Shannon, Simpson, Pielou)","NddMJ_yaN3c","David Beaune"),
+ ("b4","b4-l1","Interactions plantes-pollinisateurs : hier, aujourd'hui et demain (2), E. Porcher","lj5YiJT8LOI","Sciences de la vie - Collège de France"),
+ ("b4","b4-l2","Interactions plantes-pollinisateurs : hier, aujourd'hui et demain (4), E. Porcher","XdBZU0xUhSg","Sciences de la vie - Collège de France"),
+ ("b5","b5-l1","Choix du nombre d'arbres et de variables en forêt aléatoire (random forest)","54YN_XVeUJI","LeCoinStat"),
+ ("b7","b7-l1","ADN environnemental, une révolution dans l'air","ul7SRHY4QU0","Le Blob"),
+ ("b7","b7-l1","Vous connaissez l'ADN, mais connaissez-vous l'ADN environnemental ?","jQ9tuRMKnFA","Verso"),
+ ("b7","b7-l1","ADN et big data au service de l'environnement","KRVMCzOc_4U","Monde Numérique"),
+ ("b7","b7-l1","L'ADN environnemental (ADNe) et l'ARN environnemental (ARNe)","Xgh3m8WBoFI","Académie d'agriculture de France"),
+ ("b7","b7-l2","Statistiques bayésiennes : introduction","8mf7AgbTyV4","Pour Apprendre"),
+ ("b8","b8-l2","Les journées 2024 du GdR EcoStat : atelier jSDM","f4SmgKzk3U4","GDR EcoStat"),
 ]
 out = [dict(niveau=n, lecon=l, titre=t, url="https://www.youtube.com/watch?v="+i, duree="", description=f"Chaîne YouTube : {c}.") for n,l,t,i,c in V]
 assert len({o['url'] for o in out}) == len(out)
 head = """/*
- * VIDÉOS TUTORIELLES — parcours R
+ * VIDÉOS TUTORIELLES — parcours R et Biodiversité
  * Vidéos YouTube en français ou en arabe uniquement, vérifiées en ligne le 22/11/2026.
  * Ajoutez des vidéos depuis la page « Administration » du site, puis remplacez ce fichier
  * par le videos.js téléchargé, ou copiez un bloc { ... } à la main.
- * Champs : niveau ("r1"…"r8"), lecon (ex. "r3-l2" ou "" pour tout le niveau), titre,
+ * Champs : niveau ("r1"…"r8" ou "b1"…"b9"), lecon (ex. "r3-l2" ou "" pour tout le niveau), titre,
  *          url (YouTube ou videos/fichier.mp4), duree, description ("Chaîne YouTube : Nom." alimente la page Remerciements).
  */
 """

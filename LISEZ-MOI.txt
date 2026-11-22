@@ -41,3 +41,13 @@ AJOUTER UNE VIDÉO
 
 PROGRESSION DES ÉLÈVES
   Enregistrée dans le navigateur de chaque poste (indépendante du site SIG).
+
+PARCOURS BIODIVERSITÉ (ajouté le 22/11/2026)
+  9 niveaux (b1 à b9), 18 leçons, 36 questions, en français, English et العربية :
+  données ouvertes (GBIF, OBIS, WorldClim, Copernicus, MODIS), télédétection et NDVI,
+  diversité bêta et neutralité, réseaux multiplexes, SDM et IA explicable, occupation
+  et détection imparfaite, ADN environnemental, JSDM, modèles bayésiens multi-espèces
+  et spatio-temporels.
+  Fichiers : donnees/cours_bio.js, donnees/traductions/en_bio.js et ar_bio.js,
+  generateur/fr_bio_*.py, en_bio.py, ar_bio.py, gen_cours_bio.py, gen_trad_bio.py,
+  generateur/generer_donnees_bio.R (données fictives).
